@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renewed Consultancies Registry FY 2082/83 | Ministry of Education & Sports, Nepal</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<noscript><div style="padding:16px;background:#fff3cd;color:#4f3b00;text-align:center;font-family:Arial,sans-serif;">This registry requires JavaScript. Please enable JavaScript to view the consultancy list.</div></noscript>
+
+<header>
+  <div class="hdr-inner">
+    <div class="hdr-badge">🎓</div>
+    <div>
+      <div class="hdr-sub">Government of Nepal &bull; Ministry of Education &amp; Sports</div>
+      <div class="hdr-title">Renewed Educational Consultancies Registry</div>
+      <div class="hdr-meta">
+        <span>Fiscal Year <b>2082/83</b></span>
+        <span>|</span>
+        <span>Total Registered: <b id="totalCount">–</b></span>
+        <span>|</span>
+        <span>Official Verified List</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="notice">
+  ⚠&nbsp; Always cross-verify the Approval Number against the physical certificate before enrolling.
+  &nbsp;•&nbsp; Consultancies are strictly prohibited from providing services outside their listed Approved Services.
+</div>
+
+<div class="loc-section">
+  <div class="loc-inner">
+    <div class="loc-label">Browse by Location — click to filter</div>
+    <div class="loc-cards" id="locCards"></div>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <div class="search-inner">
+    <div class="search-box">
+      <span class="s-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search name, address or approval no…" autocomplete="off">
+    </div>
+    <select class="fsel" id="serviceFilter">
+      <option value="">🛎 All Services</option>
+      <option value="ielts">IELTS Preparation</option>
+      <option value="toefl">TOEFL Preparation</option>
+      <option value="pte">PTE Preparation</option>
+      <option value="gre">GRE Preparation</option>
+      <option value="gmat">GMAT Preparation</option>
+      <option value="sat">SAT Preparation</option>
+      <option value="medical">Medical Entrance</option>
+      <option value="japanese">Japanese Language</option>
+      <option value="english">English Language</option>
+      <option value="german">German Language</option>
+      <option value="korean">Korean Language</option>
+      <option value="chinese">Chinese Language</option>
+      <option value="french">French Language</option>
+    </select>
+    <button class="clear-btn" onclick="clearAll()">✕ Clear All</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="stats-bar">
+    <div class="res-count">Showing <strong id="shownCount">–</strong> consultancies</div>
+    <div class="chips" id="chips"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<footer>
+  <strong>Ministry of Education &amp; Sports — Government of Nepal</strong><br>
+  Renewed Educational Consultancies Master Registry &bull; FY 2082/83<br>
+  This is an official verified list. Always verify the physical approval certificate before enrolling.
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
